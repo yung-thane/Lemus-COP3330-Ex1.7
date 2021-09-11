@@ -17,7 +17,8 @@ public class RectangleArea {
         int width = widthInp.nextInt();
 
         int areaFeet = length * width;
-        float areaMeters = (float) (areaFeet * .09290304);
+        float conversion = (float) .09290304;
+        float areaMeters =  (areaFeet * conversion);
 
         System.out.printf("The area is\n%d square feet\n%.3f square meters",areaFeet,areaMeters);
 
